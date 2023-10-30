@@ -3,7 +3,7 @@ title: "Anatomical Footprint of the Impulse Control Disorders in Parkinson’s D
 collection: publications
 permalink: /publication/icd-cvt-paper
 excerpt: ''
-date: 2010-10-01
+date: 2023-11-10
 venue: 'Journal 1'
 paperurl: 'http://cajifan.github.io/files/CSEI.pdf'
 citation: 'Your Name, You. (2010). &quot;Paper Title Number 2.&quot; <i>Journal 1</i>. 1(2).'
