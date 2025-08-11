@@ -3,62 +3,69 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
 import { getCollection } from "astro:content";
 import createSlug from "../lib/createSlug"
+import PostLayout from "@layouts/PostLayout.astro";
 
-const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+const posts = (await getCollection("ongoing-projects")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
 const last_posts = posts.slice(0, 3);
 ---
 
 <BaseLayout sideBarActiveItemID="home">
   <div class="pb-12 mt-5">
-    <div class="text-xl py-1">Hey there 👋</div>
-    <div class="text-5xl font-bold">I'm Manuel Ernesto</div>
-    <div class="text-3xl py-3 font-bold">Software Engineer and Entrepreneur</div>
+    <!-- <div class="text-xl py-1">Hey there 👋</div> -->
+    <!-- <div class="text-5xl font-bold">I</div> -->
+    <div class="text-3xl py-3 font-bold">Bio</div>
     <div class="py-2">
       <text class="text-lg">
-        This is <b>Astrofy</b> a free and open-source template for your Personal Portfolio Website built with Astro and TailwindCSS.
-        Create in minutes a website with Blog, CV, Project Section, Store and RSS Feed. I hope you find
-        it useful!
+        <p>Carlos Jiménez Farfán is graduate research assistant at the 
+          <a href="https://www.iri.upc.edu/">Institut de Robòtica i Informàtica Industrial (IRI)</a> 
+          currently pursuing a Master’s in Artificial Intelligence through a joint program involving
+          <a href="https://www.upc.edu/en/">Universitat Politècnica de Catalunya (UPC)</a>,
+          <a href="https://web.ub.edu/en/">Universitat de Barcelona (UB)</a>, and
+          <a href="https://www.urv.cat/en/">Universitat Rovira i Virgili (URV)</a>. </p>
+        
+        <p> He obtained his B.Sc. degree in Computer Science from <a href="https://www.espol.edu.ec/en">Escuela Superior Politécnica del Litoral (ESPOL) </a></p>
+
+        <!-- My primary research interests revolve around pushing the boundaries of Artificial General Intelligence (AGI), I'm trying to go beyond pattern recognition and develop algorithms capable of reasoning and learning high-level, generalizable, and transferable representations from raw data. This would enable AI systems to generalize across tasks and domains, ideally matching—or even surpassing—humans.
+
+        I believe that meta-learning and self-supervised learning techniques hold immense promise for advancing towards this goal. I like to keep my research grounded in the real world—I want to see how the ideas I work on can actually make a difference. That’s one of the reasons I’m so interested in robotics. Whether it’s helping robots see and understand their surroundings, navigate on their own, or learn how to move and adapt, 
+        I enjoy figuring out how AI can make robots smarter and more capable in dynamic, unpredictable environments. -->
+
       </text>
     </div>
-    <div class="mt-8">
-      <a class="btn" href="https://twitter.com/manuelernestog" target="_blank"> Let's connect!</a>
-      <a href="https://github.com/manuelernestog/astrofy" target="_blank" class="btn btn-outline ml-5">
-        Get This template
-      </a>
-    </div>
+
   </div>
 
   <div>
-    <div class="text-3xl w-full font-bold mb-2">My last projects {"</>"}</div>
+    <div class="text-3xl w-full font-bold mb-2">Ongoing projects</div>
+  
   </div>
 
-  <HorizontalCard
-    title="Demo Project 1"
+
+  <!-- <HorizontalCard
+    title="Causal Representation Learning for V"
     img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    desc="Advised by Dr. Mariella Dimiccoli"
     url="#"
-    badge="NEW"
+    badge="Master's Thesis - In progress"
+  />
+  <HorizontalCard
+    title="Learning generalizable skills for robotic manipulation through latent space representations"
+    img="/post_img.webp"
+    desc="Advised by Dr. David Blanco Mulero"
+    url="#"
+    badge="In Progress"
   />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="Demo Project 2"
+    title="Learning Occluded Cloth Geometry for Manipulation via Diffusion Models"
     img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    desc="Advised by Dr. Júlia Borràs Sol"
     url="#"
-  />
+    badge="In Progress"
+  /> -->
   <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 3"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="FOSS"
-  />
-
-  <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
-  </div>
+  
 
   {
     last_posts.map((post) => (
@@ -67,9 +74,10 @@ const last_posts = posts.slice(0, 3);
           title={post.data.title}
           img={post.data.heroImage}
           desc={post.data.description}
-          url={"/blog/" + createSlug(post.data.title, post.slug)}
+          // url={"/projects/" + createSlug(post.data.title, post.slug)}
           target="_self"
           badge={post.data.badge}
+          tags={post.data.tags}
         />
         <div class="divider my-0" />
       </>

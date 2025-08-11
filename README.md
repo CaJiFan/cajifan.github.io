@@ -186,7 +186,7 @@ Where you need to define your content collections, we define our content schemas
 
 #### Blog
 
-Add your `md` blog post in the `/content/blog/` folder.
+Add your `md` blog post in the `/content/publications/` folder.
 
 ##### Post format
 
