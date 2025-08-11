@@ -1,7 +1,7 @@
 ---
 title: "Causal Representation Learning for Mistake Detection in Procedural Videos"
 description: "Advised by Dr. Mariella Dimiccoli"
-pubDate: "In Progress"
+pubDate: "2026"
 heroImage: "/iri_logo.webp"
 badge: "Master's Thesis (In progress)"
 tags: ["Causal Representation Learning","Video Understanding", "Mistake Detection", "Procedural Videos"]

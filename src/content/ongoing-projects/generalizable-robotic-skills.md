@@ -1,7 +1,7 @@
 ---
 title: "Learning generalizable skills for robotic manipulation through latent space representations"
 description: "Advised by Dr. David Blanco Mulero"
-pubDate: "In Progress"
+pubDate: "2026"
 heroImage: "/iri_logo.webp"
 badge: "To be submitted at ICLR 2026"
 tags: ["Generalization","Robotics", "VAEs", "Transformers"]

@@ -1,7 +1,7 @@
 ---
 title: "Learning Occluded Cloth Geometry for Manipulation via Diffusion Models"
 description: "Advised by Dr. Júlia Borràs Sol"
-pubDate: "In Progress"
+pubDate: "2026"
 heroImage: "/iri_logo.webp"
 badge: "To be submitted at CoRL 2026"
 tags: ["Diffusion Models","Occluded Garments", "Cloth", "Tracking"]
