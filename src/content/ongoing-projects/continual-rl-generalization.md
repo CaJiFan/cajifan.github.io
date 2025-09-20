@@ -3,7 +3,7 @@ title: "Leveraging Latent Representations for Forward Generalization in Continua
 description: "Advised by Dr. Adrià Colomè"
 pubDate: "2026"
 heroImage: "/iri_logo.webp"
-badge: "Master's Thesis (In progress)"
+badge: "Master's Thesis"
 tags: ["Reinforcement Learning","Continual Learning", "Robotic Manipulation", "Generalization"]
 ---
 

@@ -3,7 +3,7 @@ title: "Learning generalizable skills for robotic manipulation through latent sp
 description: "Advised by Dr. David Blanco Mulero"
 pubDate: "2026"
 heroImage: "/iri_logo.webp"
-badge: "To be submitted at ICLR 2026"
+badge: ""
 tags: ["Generalization","Robotics", "VAEs", "Transformers"]
 ---
 
