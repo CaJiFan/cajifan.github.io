@@ -6,8 +6,6 @@ import createSlug from "../lib/createSlug"
 import PostLayout from "@layouts/PostLayout.astro";
 
 const posts = (await getCollection("ongoing-projects")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
-
-const last_posts = posts.slice(1, posts.length);
 ---
 
 <BaseLayout title="Home" sideBarActiveItemID="home">
@@ -49,15 +47,15 @@ const last_posts = posts.slice(1, posts.length);
 
      <!-- <div class="divider my-0"></div> -->
 
-    <div>
+    <!-- <div> -->
       <!-- <div class="text-3xl w-full font-bold mb-2">Ongoing projects</div> -->
-      <div class="py-2">
-        <text class="text-lg">
-          To get a look at my research interests and ongoing projects check out my
-          <a href="/research" class="text-linkblue hover:underline">Research</a> page.
-        </text>
-      </div>
-    </div>
+      <!-- <div class="py-2"> -->
+        <!-- <text class="text-lg"> -->
+          <!-- To get a look at my research interests and ongoing projects check out my -->
+          <!-- <a href="/research" class="text-linkblue hover:underline">Research</a> page. -->
+        <!-- </text> -->
+      <!-- </div> -->
+    <!-- </div> -->
 
   </div>
 
