@@ -75,27 +75,15 @@ const last_posts = posts.slice(1, posts.length);
   </div>
 
   <div>
-    <div class="text-3xl w-full font-bold mb-2">Ongoing projects</div>
-  
+    <!-- <div class="text-3xl w-full font-bold mb-2">Ongoing projects</div> -->
+    <div class="py-2">
+      <text class="text-lg">
+        To get a look at my research interests and ongoing projects check out my
+        <a href="http://unith.ai" class="text-linkblue hover:underline">Research</a> page.
+      </text>
+    </div>
   </div>
 
   <div class="divider my-0"></div>
-  
 
-  {
-    last_posts.map((post) => (
-      <>
-        <HorizontalCard
-          title={post.data.title}
-          img={post.data.heroImage}
-          desc={post.data.description}
-          url={"/projects/" + post.slug}
-          target="_self"
-          badge={post.data.badge}
-          tags={post.data.tags}
-        />
-        <div class="divider my-0" />
-      </>
-    ))
-  }
 </BaseLayout>
