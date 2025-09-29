@@ -4,7 +4,7 @@ description: "Advised by Dr. Adrià Colomè"
 pubDate: "25-09-2026"
 heroImage: "/iri_logo.webp"
 badge: "Master's Thesis"
-tags: ["Reinforcement Learning","Continual Learning", "Robotic Manipulation", "Generalization"]
+tags: ["Continual Reinforcement Learning","Variable Impedance Control", "Contact-rich manipulation", "Latent Representations"]
 ---
 
 The candidate will do research in Variable Impedance Control (VIC) conditioned on language instructions, vision and user preferences within the project DROVIC (Data-driven Robot Variable Impedance Control with Context Awareness).
