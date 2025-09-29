@@ -1,5 +1,5 @@
 ---
-title: "Learning generalizable skills for robotic manipulation through latent space representations"
+title: "Learning Generalizable Skills for Robotic Manipulation through Latent Space Representations"
 description: "Advised by Dr. David Blanco Mulero"
 pubDate: "22-09-2026"
 heroImage: "/iri_logo.webp"
