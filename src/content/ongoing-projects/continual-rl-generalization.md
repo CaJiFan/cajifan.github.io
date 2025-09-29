@@ -1,5 +1,5 @@
 ---
-title: "Leveraging Latent Representations for Forward Generalization in Continual Reinforcement Learning of Robotic Manipulation Skills"
+title: "Continual Reinforcement Learning with Latent Representations for Variable Impedance Control in Contact-Rich Manipulation"
 description: "Advised by Dr. Adrià Colomè"
 pubDate: "25-09-2026"
 heroImage: "/iri_logo.webp"
