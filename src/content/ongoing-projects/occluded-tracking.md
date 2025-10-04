@@ -1,5 +1,5 @@
 ---
-title: "Towards Robust Long-Horizon Tracking in Robotic Cloth Manipulation"
+title: "Towards Robust and Occlusion-Aware Tracking for Robotic Cloth Manipulation"
 description: "Advised by Dr. Júlia Borràs Sol"
 pubDate: "16-09-2026"
 heroImage: "/iri_logo.webp"
