@@ -11,7 +11,7 @@ const last_posts = posts.slice(1, posts.length);
 
 <BaseLayout title="Research" sideBarActiveItemID="research">
 
-  <div class="pb-12 mt-5">
+  <!-- <div class="pb-12 mt-5">
     <div class="text-3xl py-3 font-bold">Research Overview</div>
     
     <div class="py-2">
@@ -46,9 +46,85 @@ const last_posts = posts.slice(1, posts.length);
       </text>
     </div>
 
-  </div> 
+  </div>  -->
+
+  <div class="pb-12 mt-5">
+  <div class="text-3xl py-3 font-bold">Research Overview</div>
+
+  <div class="py-2 text-lg leading-relaxed">
+
+    <p>
+      My research interests lie at the intersection of <b>Machine Learning</b>, <b>Robotics</b>, and the pursuit of 
+      <b>Embodied Artificial General Intelligence (E-AGI)</b>. 
+      I am primarily focused on <b>Reinforcement Learning (RL)</b> theory and its application to robot learning systems
+      that can reason, adapt, and act robustly in the real world.
+    </p>
+
+    <div class="divider my-0"></div>
+
+    <p class="pt-4 text-xl font-semibold"><b>Reinforcement Learning and Continual Adaptation</b></p>
+
+    <p>
+      My current research direction focuses on improving <b>generalization</b>, <b>sample efficiency</b>, and <b>lifelong adaptability</b> 
+      in <b>Continual Reinforcement Learning (CRL)</b>. 
+      I am particularly interested in developing agents that can learn continuously from experience 
+      without catastrophic forgetting or the need for task-specific supervision.
+    </p>
+
+    <ul class="list-disc pl-8 py-2 space-y-2">
+      <li>
+        <b>Task-Agnostic Continual RL:</b> Most continual RL research focuses on mitigating catastrophic forgetting. 
+        My interest lies in advancing <b>forward transfer</b> — enabling past knowledge to accelerate future learning — and 
+        <b>task-agnostic continual learning</b>, where agents adapt seamlessly without explicit task boundaries.
+      </li>
+
+      <li>
+        <b>Causal Reasoning in RL:</b> I am exploring how <b>causal representation learning</b> can structure the latent spaces of RL agents, 
+        improving <b>generalization</b>, <b>explainability</b>, and <b>data efficiency</b>. 
+        This involves learning disentangled, causally grounded state representations that allow for 
+        transfer across tasks and environments — moving closer to generalist robotic intelligence.
+      </li>
+
+      <li>
+        <b>Equivariance and Symmetry in RL:</b> I am interested in how <b>equivariant neural architectures</b> 
+        can encode the underlying symmetries of physical environments (e.g., SE(3) transformations in manipulation). 
+        Such inductive biases can dramatically improve generalization across viewpoints and configurations, 
+        and are especially promising when combined with continual or causal RL frameworks.
+      </li>
+    </ul>
+
+    <div class="divider my-0"></div>
+
+    <p class="pt-4 text-xl font-semibold"><b>Robot Learning and Multimodal Perception</b></p>
+
+    <p>
+      My work also investigates how RL agents can benefit from <b>rich multimodal perception</b>. 
+      In particular, I believe the future of robotics lies in <b>tactile sensing</b> — the ability to 
+      perceive and react to physical contact with the environment. 
+      Integrating tactile and proprioceptive feedback with vision and language will enable more 
+      robust, context-aware, and compliant robot behavior.
+    </p>
+
+    <p>
+      Within this scope, I am drawn to <b>Variable Impedance Control (VIC)</b> as a mechanism for safe and adaptive interaction. 
+      Combining VIC with learning-based policies can bridge the gap between high-level reasoning and low-level compliant control, 
+      allowing robots to handle dynamic, contact-rich manipulation tasks with precision and safety.
+    </p>
+
+    <div class="divider my-0"></div>
+
+    <p class="pt-4">
+      My long-term goal is to contribute to the development of <b>generalist robots</b> capable of 
+      <b>robust, adaptive, and lifelong learning behavior</b> across diverse real-world tasks — 
+      bridging the gap between <i>learning in simulation</i> and <i>reasoning in the physical world</i>.
+    </p>
+
+  </div>
+</div>
+
 
  
+
   <div>
     <div class="text-3xl w-full font-bold mb-2">Ongoing projects</div>
   
