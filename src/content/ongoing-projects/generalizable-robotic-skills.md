@@ -1,5 +1,5 @@
 ---
-title: "Learning Generalizable Skills for Robotic Manipulation through Latent Space Representations"
+title: "Learning Generalizable Skills with Tokenized Latents and Residual Flow Matching for Robotic Manipulation"
 description: "Advised by Dr. David Blanco Mulero"
 pubDate: "22-09-2026"
 heroImage: "/iri_logo.webp"
