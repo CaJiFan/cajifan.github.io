@@ -1,5 +1,5 @@
 ---
-title: "Continual Reinforcement Learning with Latent Representations for Variable Impedance Control in Contact-Rich Manipulation"
+title: "Language-Conditioned (Continual) Contextual Reinforcement Learning for Adaptive Variable Impedance Control"
 description: "Advised by Dr. Adrià Colomè"
 pubDate: "25-09-2026"
 heroImage: "/iri_logo.webp"
