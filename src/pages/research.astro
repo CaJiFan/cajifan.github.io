@@ -11,48 +11,10 @@ const last_posts = posts.slice(1, posts.length);
 
 <BaseLayout title="Research" sideBarActiveItemID="research">
 
-  <!-- <div class="pb-12 mt-5">
-    <div class="text-3xl py-3 font-bold">Research Overview</div>
-    
-    <div class="py-2">
-      <text class="text-lg">
-        <p>
-          My research interests lie at the intersection of robotics, embodied AI, and the pursuit of <b>Artificial General
-          Intelligence (AGI)</b>. I am fascinated by the idea of enabling robots to <b>generalize not only in the skills they acquire, but
-          also in the task representations they encode</b>, effectively allowing them to <it>reason, adapt, and act</it> more efficiently to
-          unseen environments.
-        </p>
-        <br>
-        <p>  
-          My current focus is on advancing <b>Continual Reinforcement Learning (CRL)</b>. 
-          While much research emphasizes <i>catastrophic forgetting</i>, I believe the future lies in underexplored problems such as <i><b>forward 
-          transfer</b></i>, where past skills accelerate learning of new ones, and <i><b>task-agnostic continual RL</b></i>, 
-          where agents learn continuously without explicit knowledge of task boundaries.
-        </p>
-        <br>
-        <p>
-          Beyond these directions, I am particularly interested in integrating <b>Causal Representation Learning</b> with <b>Reinforcement Learning (RL)</b>
-          to improve the sample efficiency, generalizability, and explainability of robotic decision-making.
-
-          By grounding RL in structured latent spaces and causal abstractions, I aim to create agents that can extract reusable knowledge from
-          data and transfer it across different tasks and domains, moving closer to generalist robotic intelligence.
-        </p>
-        <br>
-        <p>
-          My long-term goal is to contribute to the development of <b>generalist robots</b> capable of robust,
-          adaptive and lifelong learning behavior across diverse real-world tasks.
-        </p>
-
-      </text>
-    </div>
-
-  </div>  -->
-
   <div class="pb-12 mt-5">
   <div class="text-3xl py-3 font-bold">Research Overview</div>
 
   <div class="py-2 text-lg leading-relaxed">
-
     <p>
       My research interests lie at the intersection of <b>Machine Learning</b>, <b>Robotics</b>, and the pursuit of 
       <b>Embodied Artificial General Intelligence (E-AGI)</b>. 
@@ -60,79 +22,93 @@ const last_posts = posts.slice(1, posts.length);
       that can reason, adapt, and act robustly in the real world.
     </p>
 
-    <div class="divider my-0"></div>
+    <div class="divider my-4"></div>
 
-    <div class="text-xl py-3 font-bold">Reinforcement Learning and Continual Adaptation</div>
+    <!-- Reinforcement Learning Section -->
+    <details class="group border border-base-300 rounded-2xl p-4 mb-3">
+      <summary class="text-xl font-bold cursor-pointer select-none flex justify-between items-center">
+        Reinforcement Learning and Continual Adaptation
+        <span class="transition-transform group-open:rotate-90">➤</span>
+      </summary>
+      <div class="mt-3 space-y-3">
+        <p>
+          My current research direction focuses on improving <b>generalization</b>, <b>sample efficiency</b>, and 
+          <b>lifelong adaptability</b> in RL. 
+          I am particularly interested in developing algorithms that can learn continuously from experience,
+          adapt to new contexts and users, and leverage human feedback — without explicit task segmentation or manual reward design.
+        </p>
 
-    <p>
-      My current research direction focuses on improving <b>generalization</b>, <b>sample efficiency</b>, and <b>lifelong adaptability</b> 
-      in RL. 
-      I am particularly interested in developing algorithms that can learn continuously from experience,
-      adapt to new contexts and users, and leverage human feedback — without explicit task segmentation or manual reward design.
-    </p>
+        <ul class="list-disc pl-8 space-y-2">
+          <li>
+            <b>Task-Agnostic Continual RL:</b> I aim to study methods that go beyond mitigating catastrophic forgetting,
+            focusing instead on <b>forward transfer</b> — enabling past knowledge to accelerate future learning. 
+            My long-term aim is to build <b>task-agnostic agents</b> that evolve continuously in dynamic environments
+            without the need for resetting or explicit supervision.
+          </li>
+          <li>
+            <b>Causal Reasoning in RL:</b> I am very interested in exploring how <b>causal representation learning</b> can structure
+            the latent spaces of RL agents, improving <b>generalization</b>, <b>explainability</b>, and <b>data efficiency</b>. 
+            This involves learning disentangled, causally grounded state representations that allow for transfer across tasks and environments —
+            moving closer to generalist robotic intelligence.
+          </li>
+          <li>
+            <b>Equivariance and Symmetry in RL:</b> I am also strongly attracted to <b>equivariant neural architectures</b> and how they
+            can encode the underlying symmetries of physical environments (e.g., SE(3) transformations in manipulation). 
+            Such inductive biases can dramatically improve generalization across viewpoints and configurations, 
+            and are especially promising when combined with continual or causal RL frameworks.
+          </li>
+        </ul>
+      </div>
+    </details>
 
-    <ul class="list-disc pl-8 py-2 space-y-2">
-      <li>
-        <b>Task-Agnostic Continual RL:</b> I aim to study methods that go beyond mitigating catastrophic forgetting,
-         focusing instead on <b>forward transfer</b> — enabling past knowledge to accelerate future learning. 
-        
-        My long-term aim is to build <b>task-agnostic agents</b> that evolve continuously in dynamic environments
-        without the need for resetting or explicit supervision.
-      </li>
+    <!-- Robot Learning Section -->
+    <details class="group border border-base-300 rounded-2xl p-4 mb-3">
+      <summary class="text-xl font-bold cursor-pointer select-none flex justify-between items-center">
+        Robot Learning and Multimodal Perception
+        <span class="transition-transform group-open:rotate-90">➤</span>
+      </summary>
+      <div class="mt-3">
+        <p>
+          My work also investigates how RL agents can benefit from <b>rich multimodal perception</b>. 
+          In particular, I believe the future of robotics lies in <b>tactile sensing</b> — the ability to 
+          perceive and react to physical contact with the environment. 
+          Integrating tactile and proprioceptive feedback with vision and language will enable more 
+          robust, context-aware, and compliant robot behavior.
+        </p>
+      </div>
+    </details>
 
-      <li>
-        <b>Causal Reasoning in RL:</b> I am very interested in exploring how <b>causal representation learning</b> can structure the latent spaces of RL agents, 
-        improving <b>generalization</b>, <b>explainability</b>, and <b>data efficiency</b>. 
-        This involves learning disentangled, causally grounded state representations that allow for 
-        transfer across tasks and environments — moving closer to generalist robotic intelligence.
-      </li>
+    <!-- PbRL / IRL Section -->
+    <details class="group border border-base-300 rounded-2xl p-4 mb-3">
+      <summary class="text-xl font-bold cursor-pointer select-none flex justify-between items-center">
+        Preference-based (PbRL) and Inverse RL for Human-Centered Adaptation
+        <span class="transition-transform group-open:rotate-90">➤</span>
+      </summary>
+      <div class="mt-3">
+        <p>
+          I am increasingly interested in <b>Preference-based (PbRL)</b> and <b>Inverse Reinforcement Learning (IRL)</b> paradigms, 
+          where robots learn reward functions from human corrections, demonstrations, or natural language feedback.
+          This <b>human-in-the-loop</b> perspective is crucial for developing adaptive, personalized, and trustworthy robot behaviors.
+        </p>
+      </div>
+    </details>
 
-      <li>
-        <b>Equivariance and Symmetry in RL:</b> I am also strongly attracted to <b>equivariant neural architectures</b> and how they
-        can encode the underlying symmetries of physical environments (e.g., SE(3) transformations in manipulation). 
-        Such inductive biases can dramatically improve generalization across viewpoints and configurations, 
-        and are especially promising when combined with continual or causal RL frameworks.
-      </li>
-    </ul>
-
-    <div class="divider my-0"></div>
-
-    <div class="text-xl py-3 font-bold">Robot Learning and Multimodal Perception</div>
-
-    <p>
-      My work also investigates how RL agents can benefit from <b>rich multimodal perception</b>. 
-      In particular, I believe the future of robotics lies in <b>tactile sensing</b> — the ability to 
-      perceive and react to physical contact with the environment. 
-      Integrating tactile and proprioceptive feedback with vision and language will enable more 
-      robust, context-aware, and compliant robot behavior.
-    </p>
-
-    <div class="divider my-0"></div>
-    <div class="text-xl py-3 font-bold">Preference-based (PbRL) and Inverse Reinforcement Learning (IRL) for Human-Centered Adaptation:</div>
-    <p>
-      I am increasingly interested in PbRL and IRL paradigms, where robots learn reward functions from human corrections, demonstrations, or natural language feedback.
-      This <b>human-in-the-loop</b> perspective is crucial for developing adaptive, personalized, and trustworthy robot behaviors.
-    </p>
-    <!-- <p>
-      Within this scope, I am drawn to <b>Variable Impedance Control (VIC)</b> as a mechanism for safe and adaptive interaction. 
-      Combining VIC with learning-based policies can bridge the gap between high-level reasoning and low-level compliant control, 
-      allowing robots to handle dynamic, contact-rich manipulation tasks with precision and safety.
-    </p> -->
-
-    <div class="divider my-0"></div>
-    <div class="text-xl py-3 font-bold">Long-term vision</div>
-    <p class="pt-4">
-      My long-term goal is to contribute to the development of <b>generalist robots</b> capable of 
-      <b>robust, adaptive, and lifelong learning behavior</b> across diverse real-world tasks — 
-      bridging the gap between <i>learning in simulation</i> and <i>reasoning in the physical world</i>.
-    </p>
-
+    <!-- Long-term Vision Section -->
+    <details class="group border border-base-300 rounded-2xl p-4 mb-3">
+      <summary class="text-xl font-bold cursor-pointer select-none flex justify-between items-center">
+        Long-Term Vision
+        <span class="transition-transform group-open:rotate-90">➤</span>
+      </summary>
+      <div class="mt-3">
+        <p>
+          My long-term goal is to contribute to the development of <b>generalist robots</b> capable of 
+          <b>robust, adaptive, and lifelong learning behavior</b> across diverse real-world tasks — 
+          bridging the gap between <i>learning in simulation</i> and <i>reasoning in the physical world</i>.
+        </p>
+      </div>
+    </details>
   </div>
 </div>
-
-
- 
-
   <div>
     <div class="text-3xl w-full font-bold mb-2">Ongoing projects</div>
   
