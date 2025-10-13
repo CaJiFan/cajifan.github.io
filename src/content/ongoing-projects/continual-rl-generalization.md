@@ -1,10 +1,10 @@
 ---
-title: "Language-Conditioned (Continual) Contextual Reinforcement Learning for Adaptive Variable Impedance Control"
+title: "Language-grounded (Continual) Contextual Reinforcement Learning for Adaptive Variable Impedance Control"
 description: "Advised by Dr. Adrià Colomè"
 pubDate: "25-09-2026"
 heroImage: "/iri_logo.webp"
 badge: "Master's Thesis"
-tags: ["Continual Reinforcement Learning","Variable Impedance Control", "Contact-rich manipulation", "Latent Representations"]
+tags: ["Continual Reinforcement Learning","Variable Impedance Control", "Grounded Language", "Latent Representations"]
 ---
 
 The candidate will do research in Variable Impedance Control (VIC) conditioned on language instructions, vision and user preferences within the project DROVIC (Data-driven Robot Variable Impedance Control with Context Awareness).
