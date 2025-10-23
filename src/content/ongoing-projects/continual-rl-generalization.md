@@ -1,10 +1,10 @@
 ---
-title: "Language-grounded (Continual) Contextual Reinforcement Learning for Adaptive Variable Impedance Control"
+title: "Language-Grounded Multimodal Reinforcement Learning for Safe Adaptive Compliance in Contact-Rich Manipulation"
 description: "Advised by Dr. Adrià Colomè"
 pubDate: "25-09-2026"
 heroImage: "/iri_logo.webp"
 badge: "Master's Thesis"
-tags: ["Continual Reinforcement Learning","Variable Impedance Control", "Grounded Language", "Latent Representations"]
+tags: ["Variable Impedance Control", "Grounded Language", "Safe RL"]
 ---
 
 The candidate will do research in Variable Impedance Control (VIC) conditioned on language instructions, vision and user preferences within the project DROVIC (Data-driven Robot Variable Impedance Control with Context Awareness).
