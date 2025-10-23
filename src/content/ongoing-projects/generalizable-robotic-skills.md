@@ -4,6 +4,7 @@ description: "Advised by Dr. David Blanco Mulero"
 pubDate: "22-09-2026"
 heroImage: "/iri_logo.webp"
 badge: ""
+link: "#"
 tags: ["Generalization","Robotics", "VAEs", "Transformers"]
 ---
 

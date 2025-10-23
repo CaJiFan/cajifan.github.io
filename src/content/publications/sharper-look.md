@@ -3,6 +3,7 @@ title: "A Sharper Look: Edge Detection and Light-Weight 3D Vision Transformers f
 description: "Carlos Jiménez-Farfán, Ana Briones Chonillo, Alisson Constantine, Edwin Valarezo, Francis Loayza, Enrique Peláez"
 pubDate: "2024"
 heroImage: "/sharper_look.webp"
+url: "https://ieeexplore.ieee.org/abstract/document/10755869/"
 tags: ["3D Vision Transformers", "MRI", "Edge Detection"]
 badge: "IEEE ANDESCON 2024"
 ---

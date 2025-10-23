@@ -4,6 +4,7 @@ description: "Ahmad AlMughrab, Carlos Jiménez-Farfán, Ricardo Marques and Peti
 pubDate: "2025"
 heroImage: "/nerfood.webp"
 badge: "Submitted to Pattern Recognition Letters"
+url: "#"
 tags: ["NeRF", "Food Computing", "Neural Reconstruction", "3D Reconstruction"]
 ---
 

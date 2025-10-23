@@ -3,6 +3,7 @@ title: "Myo Transformer Signal Classification for an Anthropomorphic Robotic Han
 description: "Bolívar Nuñez, Edwin Valarezo-Añazco, Sara Guerrero, Mauricio Valarezo-Añazco, Daniela Espín, Carlos Jiménez Farfán"
 pubDate: "2023"
 heroImage: "/myo_transformer.webp"
+url: "https://www.mdpi.com/2673-1592/5/4/88"
 tags: ["Myo Signals", "Transformers", "Robotic Hand"]
 badge: "Prosthesis 2023"
 ---

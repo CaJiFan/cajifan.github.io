@@ -16,7 +16,11 @@ const { page } = Astro.props;
 <BaseLayout title="Publications" sideBarActiveItemID="publications">
   <div class="mb-5">
     <div class="text-3xl w-full font-bold">Publications</div>
-    <p>You can see my complete list of publications in <a href="https://scholar.google.com/citations?user=3fiO9yAAAAAJ&hl=en">my scholar profile</a></p>
+    <p>For the complete list of publications see
+      <a href="https://scholar.google.com/citations?user=3fiO9yAAAAAJ&hl=en" class="text-linkblue hover:underline">
+        my scholar profile
+      </a>
+    </p>
   </div>
 
   {
@@ -34,8 +38,9 @@ const { page } = Astro.props;
               img={post.data.heroImage}
               desc={post.data.description}
               // url={"/publications/" + createSlug(post.data.title, post.slug)}
-              url={"/publications/"+post.slug}
-              target="_self"
+              // url={"/publications/"+post.link}
+              url={post.url}
+              target="_blank"
               badge={post.data.badge}
               tags={post.data.tags}
             />

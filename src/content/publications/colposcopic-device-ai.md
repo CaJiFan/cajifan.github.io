@@ -4,6 +4,7 @@ description: "Carlos Jiménez Farfán, Freddy Sánchez, Erika Villa, John Rodrí
 pubDate: "2024"
 heroImage: "/colposcopic_device.webp"
 tags: ["Uterine Cancer", "AI", "Transformers"]
+url: "https://ieeexplore.ieee.org/abstract/document/10755769"
 badge: "IEEE ANDESCON 2024"
 ---
 
