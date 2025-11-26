@@ -3,7 +3,7 @@ title: "FoodMask+: A Large-Scale Dataset and Benchmark for Multi-View Food Video
 description: "Ahmad AlMughrab, Guillermo Rivo, Carlos Jiménez-Farfán, Umair Haroon, Farid Al-Areqi, Hyunjun Jung, Benjamin Busam Ricardo Marques and Petia Radeva"
 pubDate: "2025"
 heroImage: "/nerfood.webp"
-badge: "Submitted to Expert Systems and Applications"
+badge: "Submitted to Expert Systems with Applications"
 url: "#"
 tags: ["food video segmentation", "dietary assessment", "benchmark dataset", video-"based segmentation", memory-augmented models", "cross-dataset generalization"]
 ---
