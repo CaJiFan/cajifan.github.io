@@ -4,7 +4,7 @@ description: "Ahmad AlMughrab, Guillermo Rivo, Carlos Jiménez-Farfán, Umair Ha
 pubDate: "2025"
 heroImage: "/nerfood.webp"
 badge: "Submitted to Expert Systems with Applications"
-url: "#"
+url: "https://arxiv.org/abs/2601.07581"
 tags: ["food video segmentation", "dietary assessment", "benchmark dataset", "video-based segmentation", "memory-augmented models", "cross-dataset generalization"]
 ---
 
