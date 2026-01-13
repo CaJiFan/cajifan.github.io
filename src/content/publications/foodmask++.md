@@ -1,10 +1,12 @@
 ---
 title: "SegBench: A Large-Scale Dataset and Benchmark for Multi-View Food Video Segmentation"
-description: "Ahmad AlMughrab, Guillermo Rivo, Carlos Jiménez-Farfán, Umair Haroon, Farid Al-Areqi, Hyunjun Jung, Benjamin Busam Ricardo Marques and Petia Radeva"
-pubDate: "2025"
+description: "Food image segmentation is a critical task for dietary analysis, enabling accurate estimation of food volume and nutrients."
+pubDate: "2025-01-13"
 heroImage: "/nerfood.webp"
-badge: "Submitted to Expert Systems with Applications"
+authors: "Ahmad AlMughrab, Guillermo Rivo, Carlos Jiménez-Farfán, Umair Haroon, Farid Al-Areqi, Hyunjun Jung, Benjamin Busam, Ricardo Marques, Petia Radeva"
+venue: "Submitted to Expert Systems with Applications"
 url: "https://arxiv.org/abs/2601.07581"
+arxiv: "https://arxiv.org/abs/2601.07581"
 tags: ["food video segmentation", "dietary assessment", "benchmark dataset", "video-based segmentation", "memory-augmented models", "cross-dataset generalization"]
 ---
 

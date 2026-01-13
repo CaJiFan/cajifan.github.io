@@ -1,94 +1,166 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import HorizontalCard from "../../components/HorizontalCard.astro";
 import { getCollection } from "astro:content";
-import createSlug from "../../lib/createSlug"
 
-export async function getStaticPaths({ paginate }) {
-  const posts = await getCollection("publications");
-  posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
-  return paginate(posts, { pageSize: 10 });
-}
+// Fetch all publications
+const posts = await getCollection("publications");
 
-const { page } = Astro.props;
+// Sort by date (newest first)
+posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+// Get all unique tags for a potential dropdown filter later, or just for metadata
+const allTags = [...new Set(posts.map((post) => post.data.tags).flat())];
 ---
 
 <BaseLayout title="Publications" sideBarActiveItemID="publications">
   <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Publications</div>
-    <p>For the complete list of publications see
-      <a href="https://scholar.google.com/citations?user=3fiO9yAAAAAJ&hl=en" class="text-linkblue hover:underline">
+    <div class="text-3xl w-full font-bold mb-4">Publications</div>
+    <p class="mb-4">
+      For the complete list of publications see
+      <a href="https://scholar.google.com/citations?user=3fiO9yAAAAAJ&hl=en" target="_blank" class="text-blue-600 hover:underline">
         my scholar profile
-      </a>
+      </a>.
     </p>
+
+    <div class="form-control w-full max-w-xs sm:max-w-md mb-8">
+      <input
+        type="text"
+        id="search-input"
+        placeholder="Filter by title, author, year, or keyword..."
+        class="input input-bordered w-full"
+      />
+    </div>
   </div>
 
-  {
-    page.data.length === 0 ? (
-      <div class="bg-[#212121] border-l-4 border-secondary w-full p-4 min-w-full">
-        <p class="font-bold">Sorry!</p>
-        <p>There are no publications to show at the moment. Check back later!</p>
-      </div>
-    ) : (
-      <ul>
-        {page.data.map((post) => (
-          <>
-            <HorizontalCard
-              title={post.data.title} 
-              img={post.data.heroImage}
-              desc={post.data.description}
-              // url={"/publications/" + createSlug(post.data.title, post.slug)}
-              // url={"/publications/"+post.data.title}
-              url={post.data.url}
-              target="_blank"
-              badge={post.data.badge}
-              tags={post.data.tags}
-            />
-            <div class="divider my-0" />
-          </>
-        ))}
-      </ul>
-    )
-  }
+  <ul id="pubs-list" class="flex flex-col gap-8">
+    {
+      posts.map((post) => (
+        <li class="pub-item flex flex-col sm:flex-row gap-6 border-b border-gray-200 pb-8 last:border-b-0" 
+            data-title={post.data.title.toLowerCase()} 
+            data-authors={post.data.authors?.toLowerCase() || ""} 
+            data-year={post.data.pubDate.getFullYear().toString()}
+            data-tags={post.data.tags?.join(" ").toLowerCase() || ""}
+        >
+            
+          {/* THUMBNAIL (Left Side) */}
+          {post.data.heroImage && (
+            <a href={post.data.url || post.data.pdf || "#"} target="_blank" class="shrink-0 group">
+              <img
+                src={post.data.heroImage}
+                alt={post.data.title}
+                class="rounded border border-gray-200 object-cover w-full sm:w-48 h-auto shadow-sm group-hover:shadow-md transition-shadow"
+              />
+            </a>
+          )}
 
-  <div class="flex justify-between">
-    {
-      page.url.prev ? (
-        <a href={page.url.prev} class="btn btn-ghost my-10 mx-5">
-          {" "}
-          <svg
-            class="h-6 w-6 fill-current md:h-8 md:w-8"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-          >
-            <path d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z" />
-          </svg>{" "}
-          Recent posts
-        </a>
-      ) : (
-        <div />
-      )
+          {/* CONTENT (Right Side) */}
+          <div class="flex flex-col gap-1">
+            {/* Title */}
+            <h3 class="font-bold text-lg leading-tight text-gray-900">
+              <a href={post.data.url || "#"} target="_blank" class="hover:text-blue-600 transition-colors">
+                {post.data.title}
+              </a>
+            </h3>
+
+            {/* Authors */}
+            {post.data.authors && (
+              <div class="text-gray-700 text-sm">
+                {post.data.authors}
+              </div>
+            )}
+
+            {/* Venue / Conference */}
+            {post.data.venue && (
+               <div class="text-gray-600 italic text-sm">
+                 {post.data.venue}
+               </div>
+            )}
+            
+            {/* Links Row */}
+            <div class="flex flex-wrap gap-x-3 gap-y-1 mt-2 text-sm font-medium">
+              
+              {/* PDF / Paper Link */}
+              {post.data.url && (
+                <a href={post.data.url} target="_blank" class="text-blue-600 hover:underline">
+                  [Paper]
+                </a>
+              )}
+
+              {/* ArXiv */}
+              {post.data.arxiv && (
+                <a href={post.data.arxiv} target="_blank" class="text-blue-600 hover:underline">
+                  [arXiv]
+                </a>
+              )}
+
+              {/* Code */}
+              {post.data.code && (
+                 <a href={post.data.code} target="_blank" class="text-blue-600 hover:underline">
+                  [Code]
+                 </a>
+              )}
+
+              {/* Video */}
+              {post.data.video && (
+                 <a href={post.data.video} target="_blank" class="text-blue-600 hover:underline">
+                  [Video]
+                 </a>
+              )}
+              
+               {/* Project Page */}
+              {post.data.project && (
+                 <a href={post.data.project} target="_blank" class="text-blue-600 hover:underline">
+                  [Project Page]
+                 </a>
+              )}
+
+            </div>
+          </div>
+        </li>
+      ))
     }
-    {
-      page.url.next ? (
-        <a href={page.url.next} class="btn btn-ghost my-10 mx-5">
-          Older Posts{" "}
-          <svg
-            class="h-6 w-6 fill-current md:h-8 md:w-8"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-          >
-            {" "}
-            <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
-          </svg>
-        </a>
-      ) : (
-        <div />
-      )
-    }
+  </ul>
+
+  {/* No Results Message (Hidden by default) */}
+  <div id="no-results" class="hidden text-center py-10 text-gray-500">
+    No publications found matching your criteria.
   </div>
+
 </BaseLayout>
+
+<script>
+  // CLIENT-SIDE FILTERING LOGIC
+  const searchInput = document.getElementById('search-input');
+  const pubItems = document.querySelectorAll('.pub-item');
+  const noResults = document.getElementById('no-results');
+
+  searchInput.addEventListener('input', (e) => {
+    const term = e.target.value.toLowerCase();
+    let hasResults = false;
+
+    pubItems.forEach((item) => {
+      // Get data attributes we set on the <li>
+      const title = item.getAttribute('data-title');
+      const authors = item.getAttribute('data-authors');
+      const year = item.getAttribute('data-year');
+      const tags = item.getAttribute('data-tags');
+
+      // Check if search term exists in any of these fields
+      if (title.includes(term) || authors.includes(term) || year.includes(term) || tags.includes(term)) {
+        item.classList.remove('hidden');
+        item.classList.add('flex'); // Ensure it displays as flex
+        hasResults = true;
+      } else {
+        item.classList.add('hidden');
+        item.classList.remove('flex');
+      }
+    });
+
+    // Toggle "No Results" message
+    if (hasResults) {
+      noResults.classList.add('hidden');
+    } else {
+      noResults.classList.remove('hidden');
+    }
+  });
+</script>
