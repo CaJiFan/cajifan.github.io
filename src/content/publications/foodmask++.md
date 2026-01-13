@@ -7,6 +7,7 @@ authors: "Ahmad AlMughrab, Guillermo Rivo, Carlos Jiménez-Farfán, Umair Haroon
 venue: "Submitted to Expert Systems with Applications"
 url: "https://arxiv.org/abs/2601.07581"
 arxiv: "https://arxiv.org/abs/2601.07581"
+project: "https://amughrabi.github.io/benchseg/"
 tags: ["food video segmentation", "dietary assessment", "benchmark dataset", "video-based segmentation", "memory-augmented models", "cross-dataset generalization"]
 ---
 
