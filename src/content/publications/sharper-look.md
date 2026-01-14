@@ -4,7 +4,7 @@ description: "This research investigates the advantages of using deep learning a
 pubDate: "2024-09-11"
 heroImage: "/sharper_look.webp"
 authors: "Carlos Jiménez-Farfán, Ana Briones Chonillo, Alisson Constantine, Edwin Valarezo, Francis Loayza, Enrique Peláez"
-venue: "2024 IEEE ANDESCON"
+venue: "IEEE ANDESCON 2024"
 url: "https://ieeexplore.ieee.org/abstract/document/10755869/"
 tags: ["3D Vision Transformers", "MRI", "Edge Detection"]
 ---
