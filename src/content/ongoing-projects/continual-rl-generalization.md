@@ -1,6 +1,6 @@
 ---
 title: "Language-Grounded Multimodal Reinforcement Learning for Safe Adaptive Compliance in Contact-Rich Manipulation"
-description: "Advised by Dr. Adrià Colomè"
+description: "Advised by Dr. Adrià Colomè and Prof. Mario Martin"
 pubDate: "25-09-2026"
 heroImage: "/iri_logo.webp"
 badge: "Master's Thesis"
