@@ -1,5 +1,5 @@
 ---
-title: "SegBench: A Large-Scale Dataset and Benchmark for Multi-View Food Video Segmentation"
+title: "BenchSeg: A Large-Scale Dataset and Benchmark for Multi-View Food Video Segmentation"
 description: "Food image segmentation is a critical task for dietary analysis, enabling accurate estimation of food volume and nutrients."
 pubDate: "2025-01-13"
 heroImage: "/nerfood.webp"
