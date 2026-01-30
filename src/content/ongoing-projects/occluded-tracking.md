@@ -1,5 +1,5 @@
 ---
-title: "Towards Robust and Occlusion-Aware Tracking for Robotic Cloth Manipulation"
+title: "Texture-Invariant Cloth Tracking via Geometric Generative Models"
 description: "Advised by Dr. Júlia Borràs Sol"
 pubDate: "16-09-2026"
 heroImage: "/iri_logo.webp"
