@@ -1,7 +1,7 @@
 ---
 title: "Disentangled VLAs: Structured Latent Spaces for Generalizable Robot Learning"
 description: "Advised by Dr. David Blanco Mulero"
-pubDate: "22-09-2026"
+pubDate: "22-09-2025"
 heroImage: "/iri_logo.webp"
 badge: ""
 link: "#"

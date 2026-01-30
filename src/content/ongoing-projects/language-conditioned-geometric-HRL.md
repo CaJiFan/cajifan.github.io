@@ -1,7 +1,7 @@
 ---
 title: "Language-Guided Geometric Hierarchical Reinforcement Learning for Safe Contact-Rich Manipulation"
 description: "Advised by Dr. Adrià Colomé and Prof. Mario Martin"
-pubDate: "25-09-2026"
+pubDate: "12-01-2026"
 heroImage: "/iri_logo.webp"
 badge: "Master's Thesis"
 tags: ["Variable Impedance Control", "Grounded Language", "Safe RL"]
