@@ -1,7 +1,7 @@
 ---
 title: "Texture-Invariant Cloth Tracking via Geometric Generative Models"
 description: "Advised by Dr. Júlia Borràs Sol"
-pubDate: "16-09-2025"
+pubDate: "09-16-2025"
 heroImage: "/iri_logo.webp"
 badge: "JAE Intro ICU 2025 Scholarship"
 tags: ["Tracking","Occlusion", "Cloth", "Long-Horizon videos"]
