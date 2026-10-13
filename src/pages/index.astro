@@ -2,7 +2,7 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
 import { getCollection } from "astro:content";
-import createSlug from "../lib/createSlug"
+import createSlug from "../lib/createSlug";
 import PostLayout from "@layouts/PostLayout.astro";
 
 // const posts = (await getCollection("ongoing-projects")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
@@ -13,57 +13,52 @@ import PostLayout from "@layouts/PostLayout.astro";
     <div class="text-3xl py-3 font-bold">Bio</div>
     
     <div class="py-2">
-      <text class="text-lg">
-        <p>I'm a graduate research assistant at the 
-          <a href="https://www.iri.upc.edu/"  target="_blank" class="text-linkblue hover:underline">Institut de Robòtica i Informàtica Industrial (IRI)</a> 
-          currently pursuing a Master’s in Artificial Intelligence through a joint program involving
-          <a href="https://www.upc.edu/en/"  target="_blank" class="text-linkblue hover:underline">Universitat Politècnica de Catalunya (UPC)</a>,
-          <a href="https://web.ub.edu/en/"  target="_blank" class="text-linkblue hover:underline">Universitat de Barcelona (UB)</a>, and
-          <a href="https://www.urv.cat/en/"  target="_blank" class="text-linkblue hover:underline">Universitat Rovira i Virgili (URV)</a> in Spain 🇪🇸. </p>
-
-        <p class="mt-2"> I obtained my B.Sc. degree in Computer Science from <a href="https://www.espol.edu.ec/en" target="_blank" class="text-linkblue hover:underline">Escuela Superior Politécnica del Litoral (ESPOL)</a> in Ecuador 🇪🇨.</p>
-        
-        <p class="mt-4">
-          See my <a href="/Academic_CV_Jimenez_Farfan.pdf" target="_blank" class="text-linkblue hover:underline">CV</a> for more details.
+      <div class="text-lg space-y-3">
+        <p>
+          I am a first-year PhD Researcher at TU Darmstadt and <a href="https://hessian.ai/" target="_blank" class="text-linkblue hover:underline">hessian.AI</a>, funded through the <a href="https://www.hessian.ai/projects/reasonable-ai-rai/" target="_blank" class="text-linkblue hover:underline">Reasonable Artificial Intelligence (RAI) Cluster of Excellence (Adaptive & Interactive AI track)</a>. I am conducting my research at the <a href="https://pearl-lab.com/" target="_blank" class="text-linkblue hover:underline">PEARL Lab</a> advised by Prof. Georgia Chalvatzaki, in collaboration with Prof. Martin Mundt.
         </p>
 
-      </text>
+        <p>
+          My research investigates continual robot reinforcement learning, with a focus on sample efficiency, physical/geometric priors, and representation shaping for robust and adaptive manipulation skills.
+        </p>
+
+        <p>
+          Previously, I completed my Master’s in Artificial Intelligence through a joint program across 
+          <a href="https://www.upc.edu/en/" target="_blank" class="text-linkblue hover:underline">Universitat Politècnica de Catalunya (UPC)</a>,
+          <a href="https://web.ub.edu/en/" target="_blank" class="text-linkblue hover:underline">Universitat de Barcelona (UB)</a>, and
+          <a href="https://www.urv.cat/en/" target="_blank" class="text-linkblue hover:underline">Universitat Rovira i Virgili (URV)</a> in Spain 🇪🇸, conducting research at the 
+          <a href="https://www.iri.upc.edu/" target="_blank" class="text-linkblue hover:underline">Institut de Robòtica i Informàtica Industrial (IRI, CSIC-UPC)</a> and <a href="https://eurecat.org/en/" target="_blank" class="text-linkblue hover:underline">Eurecat</a>.
+        </p>
+
+        <p>
+          I obtained my B.Sc. degree in Computer Science from <a href="https://www.espol.edu.ec/en" target="_blank" class="text-linkblue hover:underline">Escuela Superior Politécnica del Litoral (ESPOL)</a> in Ecuador 🇪🇨.
+        </p>
+        
+        <p class="pt-2">
+          See my <a href="/Academic_CV_Jimenez_Farfan.pdf" target="_blank" class="text-linkblue hover:underline">CV</a> for more details.
+        </p>
+      </div>
     </div>
 
     <!-- <div class="divider my-0"></div> -->
 
-    <div class="text-3xl py-3 font-bold">News</div>
+    <div class="text-3xl py-3 font-bold mt-8">News</div>
     
     <div class="py-2">
-      <text class="text-lg">
-        <ul class="list-disc pl-6">
+      <div class="text-lg">
+        <ul class="list-disc pl-6 space-y-2">
+          <li> (Oct 2026) Officially started my PhD position at TU Darmstadt & hessian.AI within the RAI Cluster of Excellence!</li>
+          <li> (Sep 2026) Successfully finished my Master’s in Artificial Intelligence at UPC / UB / URV and concluded my research stays at IRI in Barcelona.</li>
           <li> (Jan 2026) New preprint out! Our paper <a href="https://arxiv.org/abs/2601.07581" target="_blank" class="text-linkblue hover:underline">BenchSeg: A Large-Scale Dataset and Benchmark for Multi-View Food Video Segmentation</a> is now available on arXiv.</li>
           <li> (Sep 2025) Started the JAE Intro ICU 2025 scholarship, advised by Dr. Júlia Borràs at IRI!</li>
-          <li>
-            <p>(Jul 2025) Started my internship at <a href="http://unith.ai" class="text-linkblue hover:underline">Unith.ai</a>!</p>
-            <!-- <p>- I'll be working on diffusion- and flow-based generative models for talking heads</p> -->
-          <li> (Jul 2025) I obtained the <a href="https://sede.csic.gob.es/tramites/programa-jae/convocatoria-jae-intro-icu-2025" class="text-linkblue hover:underline">JAE Intro ICU scholarship</a> by CSIC!</li>
+          <li> (Jul 2025) Started my research internship at <a href="http://unith.ai" target="_blank" class="text-linkblue hover:underline">Unith.ai</a>!</li>
+          <li> (Jul 2025) I obtained the <a href="https://sede.csic.gob.es/tramites/programa-jae/convocatoria-jae-intro-icu-2025" target="_blank" class="text-linkblue hover:underline">JAE Intro ICU scholarship</a> by CSIC!</li>
           <li> (Mar 2025) I was awarded a fellowship to work in the AIBA research group advised by Prof. Petia Radeva at UB!</li>
-          <li> (Sep 2024) Obtained the INIREC Scholarship to work at IRI advised by Dr. Jordi Sanchez-Riera</li>
+          <li> (Sep 2024) Obtained the INIREC Scholarship to work at IRI advised by Dr. Jordi Sanchez-Riera.</li>
           <li> (Sep 2024) Started my Master in Artificial Intelligence at UPC!</li>
         </ul>
-
-      </text>
+      </div>
     </div>
 
-     <!-- <div class="divider my-0"></div> -->
-
-    <!-- <div> -->
-      <!-- <div class="text-3xl w-full font-bold mb-2">Ongoing projects</div> -->
-      <!-- <div class="py-2"> -->
-        <!-- <text class="text-lg"> -->
-          <!-- To get a look at my research interests and ongoing projects check out my -->
-          <!-- <a href="/research" class="text-linkblue hover:underline">Research</a> page. -->
-        <!-- </text> -->
-      <!-- </div> -->
-    <!-- </div> -->
-
   </div>
-
-  <!-- <div class="pb-12 mt-5"></div> -->
 </BaseLayout>
